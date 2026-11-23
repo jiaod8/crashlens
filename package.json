@@ -1,0 +1,36 @@
+{
+  "name": "crashlens",
+  "version": "0.1.0",
+  "description": "Turn a raw crash log into a ranked root-cause report with evidence and next steps.",
+  "type": "module",
+  "bin": {
+    "crashlens": "bin/crashlens.mjs"
+  },
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test",
+    "demo": "node bin/crashlens.mjs test/fixtures/node-null.log"
+  },
+  "keywords": [
+    "crash",
+    "stacktrace",
+    "diagnostics",
+    "debugging",
+    "log-analysis",
+    "root-cause"
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
